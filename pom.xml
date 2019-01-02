@@ -6,7 +6,7 @@
 
     <groupId>io.imulab.x</groupId>
     <artifactId>astrea-dependencies</artifactId>
-    <version>3</version>
+    <version>4</version>
 
     <packaging>pom</packaging>
 
@@ -31,6 +31,7 @@
         <artifactory-plugin.version>2.6.1</artifactory-plugin.version>
         <maven-jar-plugin.version>2.4</maven-jar-plugin.version>
         <kotlin-test.version>3.1.10</kotlin-test.version>
+        <caffeine.version>2.6.2</caffeine.version>
     </properties>
 
     <pluginRepositories>
@@ -261,6 +262,11 @@
                 <groupId>org.bitbucket.b_c</groupId>
                 <artifactId>jose4j</artifactId>
                 <version>${jos4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.ben-manes.caffeine</groupId>
+                <artifactId>caffeine</artifactId>
+                <version>${caffeine.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
