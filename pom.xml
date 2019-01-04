@@ -6,7 +6,7 @@
 
     <groupId>io.imulab.x</groupId>
     <artifactId>astrea-dependencies</artifactId>
-    <version>5</version>
+    <version>6</version>
 
     <packaging>pom</packaging>
 
@@ -33,6 +33,7 @@
         <kotlin-test.version>3.1.10</kotlin-test.version>
         <caffeine.version>2.6.2</caffeine.version>
         <mongo-driver.version>3.9.1</mongo-driver.version>
+        <embedded-mongo.version>2.2.0</embedded-mongo.version>
     </properties>
 
     <pluginRepositories>
@@ -273,6 +274,11 @@
                 <groupId>org.mongodb</groupId>
                 <artifactId>mongodb-driver-sync</artifactId>
                 <version>${mongo-driver.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.flapdoodle.embed</groupId>
+                <artifactId>de.flapdoodle.embed.mongo</artifactId>
+                <version>${embedded-mongo.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
