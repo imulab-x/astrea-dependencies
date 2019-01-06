@@ -6,7 +6,7 @@
 
     <groupId>io.imulab.x</groupId>
     <artifactId>astrea-dependencies</artifactId>
-    <version>6</version>
+    <version>7</version>
 
     <packaging>pom</packaging>
 
@@ -153,6 +153,11 @@
             <dependency>
                 <groupId>io.vertx</groupId>
                 <artifactId>vertx-grpc</artifactId>
+                <version>${vertx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-zookeeper</artifactId>
                 <version>${vertx.version}</version>
             </dependency>
             <dependency>
